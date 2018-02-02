@@ -60,6 +60,7 @@ function reset() {
   if (userGuess === compGuess) {
       winsText.textContent = wins+=1;
       letter = compGuess.toUpperCase
+      document.getElementById("myAudio").play();
       alert("That's right! It was '" + compGuess + "'! I'm impressed, but I bet you can't do it again!");
 // this will reset the game if the user wins
       reset();
