@@ -15,10 +15,6 @@ var winsText = document.getElementById("wins");
 // create a variable that codes for the span element with the losses tag in the html
 var lossesText = document.getElementById("losses");
 
-
-function focus() {
-    $('input').focus();
-}
 // computer guesses a random letter
 function randomCharacter() {
     var chars = "abcdefghijklmnopqurstuvwxyz";
