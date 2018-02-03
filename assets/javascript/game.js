@@ -16,12 +16,14 @@ var winsText = document.getElementById("wins");
 var lossesText = document.getElementById("losses");
 
 
-
+function focus() {
+    $('input').focus();
+}
 // computer guesses a random letter
 function randomCharacter() {
     var chars = "abcdefghijklmnopqurstuvwxyz";
     return chars.substr( Math.floor(Math.random() * 26), 1);
-    $(textFiled).trigger("focus");
+    
 }
 // that guess is
 var compGuess = randomCharacter()
